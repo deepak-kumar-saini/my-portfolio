@@ -1,0 +1,137 @@
+nav {
+    align-items: center;
+    background-color: #0f4c75;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+    display: flex;
+    font-size: 1.7rem;
+    height: auto;
+    justify-content: space-between;
+    left: 0;
+    padding: 25px 40px 25px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200
+}
+
+@media (max-width:400px) {
+    nav {
+        padding: 25px 30px
+    }
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none
+}
+
+nav ul a {
+    color:#bbe1fa;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all .23s;
+}
+
+@media (max-width:900px) {
+    nav ul a {
+        display: none
+    }
+}
+
+nav ul a:hover {
+    color: #1b262c;
+}
+
+.logo {
+    color:#bbe1fa;
+    cursor: pointer
+}
+
+h3 a{
+    color:#bbe1fa;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all .23s;
+}
+
+h3 a:hover{
+    color: #1b262c;
+}
+
+/* mobile navbar css */
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+    color:#bbe1fa;
+    font-size: 2.3rem
+}
+
+.mobile-menu:hover {
+    color: #1b262c;
+    transition: all .3s
+}
+
+@media (max-width:900px) {
+    .mobile-menu {
+        display: flex
+    }
+}
+
+.closed-menu {
+    left: -100% !important
+}
+
+.open-menu {
+    left: 0 !important
+}
+
+.mobile-nav {
+    align-items: center;
+    background-color: #3282b8;
+    color:#bbe1fa;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    z-index: 300;
+    user-select: none;
+}
+
+.mobile-nav span {
+    cursor: pointer;
+    font-size: 3.3rem;
+    position: absolute;
+    right: 4rem;
+    top: 2rem
+}
+
+.mobile-nav span:hover {
+    color: #1b262c;
+    transition: all .3s
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.3rem;
+    gap: 4rem;
+    list-style: none
+}
+
+.mobile-nav ul a {
+    color:#bbe1fa;
+    font-weight: 500;
+    text-decoration: none
+}
+
+.mobile-nav ul a:hover {
+    color: #1b262c;
+    transition: all .3s
+}

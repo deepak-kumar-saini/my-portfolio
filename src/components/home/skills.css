@@ -1,0 +1,69 @@
+.skills {
+    align-items: center;
+    bottom: 0;
+    color: #b2b2b2;
+    display: flex;
+    font-size: 1.7rem;
+    left: 0;
+    position: absolute
+}
+
+@media (max-width:900px) {
+    .skills {
+        flex-direction: column;
+        position: static
+    }
+}
+
+.skills p {
+    border-right: 2px solid #bbe1fa;
+    color: #bbe1fa;
+    font-family: Mulish, sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-right: 3rem;
+    margin-left: 0rem;
+    margin-bottom: 3rem;
+    padding-right: 2rem
+}
+
+@media (max-width:900px) {
+    .skills p {
+        border-bottom: 2px solid #bbe1fa;
+        border-right: none;
+        margin-top: 3rem ;
+        margin-bottom: 5rem;
+        margin-right: 0;
+        padding-bottom: 1rem;
+        padding-right: 0
+    }
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none
+}
+
+@media (max-width:900px) {
+    .skills ul {
+        justify-content: center
+    }
+}
+
+.skills ul li {
+    cursor: pointer;
+    margin-top: -2rem
+}
+
+.skills ul li img {
+    height: 5rem;
+    transition: all .3s ease-in-out;
+    width: 5rem
+}
+
+.skills ul li img:hover {
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem)
+}
